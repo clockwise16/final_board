@@ -1,0 +1,7 @@
+<h1>비번수정</h1>
+<form action='/users/update'>
+    유저네임: <%= User.find(session[:id]).username %> <br>
+    비밀번호: <input type='password' name='password'>
+    <input type='submit'>
+</form>
+
